@@ -99,3 +99,21 @@ h1, h2, h3, p {
 	border: 1px solid #dfe2e5;
 	padding: 10px 30px;
 }
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
